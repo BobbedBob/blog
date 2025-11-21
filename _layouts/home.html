@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<marquee direction="left" height="30px" scrollamount="15" style="background-color: black; color: white;">
+    A blog, originating from the word "weblog", is an informational website consisting of discrete, often informal diary-style
+    text entries also known as posts. Posts are typically displayed in reverse chronological order so that the most
+    recent post appears first, at the top of the web page.
+</marquee>
+
+<header>
+    <h1>{{ site.title }}</h1>
+    {%-if site.theme_config.show_description-%}
+    <p>{{ site.description }}</p>
+    {%-endif-%}
+</header>
+
+{%-include menu_item.html collection=site.data.menu.entries-%}
+{{ content }}

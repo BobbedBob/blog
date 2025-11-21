@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<a href="/">back to home</a>
+<article>
+    <p class="post-meta">
+        written by: <a href="https://bobbedbob.io/" target="_blank">bob yang</a> <br />
+        category: <b>{{ page.categories }}</b> <br />
+        <time datetime="{{ page.date }}">{{ page.date | date: site.theme_config.date_format }}</time>
+    </p>
+    <h1>{{ page.title }}</h1>
+
+    {{ content }}
+</article>
+<br /><br />
+<a href="/">back to home</a>

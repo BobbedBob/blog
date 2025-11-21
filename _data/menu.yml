@@ -1,0 +1,36 @@
+# For documentation on this file, see:
+# https://github.com/riggraz/no-style-please#customize-the-menu
+
+entries:
+  - title: welcome
+    entries:
+      - title: what is this
+        entries:
+          - title: this is bobby's blog.
+          - title: it features his opinion articles, occasional rants, cybersecurity and programming articles.
+      - title: personal website (bobbedbob.io)
+        url: https://bobbedbob.io/
+      - title: subscribe via rss
+        url: feed.xml
+
+  - title: all posts
+    post_list:
+      limit: 5
+      show_more: true
+      show_more_text: visit the archives...
+      show_more_url: archive.html
+
+  - title: posts by category
+    entries:
+      - title: opinions
+        post_list:
+          category: opinions
+          show_more: true
+          show_more_text: visit the archives...
+          show_more_url: opinions-archive.html
+      - title: cybersecurity
+        post_list:
+          category: cybersecurity
+          show_more: true
+          show_more_text: visit the archives...
+          show_more_url: cybersecurity-archive.html
